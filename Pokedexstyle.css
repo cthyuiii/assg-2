@@ -38,7 +38,7 @@ h1 {
     background-color: #f4f4f4;
     color: #222;
   text-align: center;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 
 /*hovering over the card containing the pokemon triggers an animation*/
