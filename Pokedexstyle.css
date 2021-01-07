@@ -1,4 +1,7 @@
+/*Font for search bar*/
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+/*Body Css style*/
 body {
     background-color: orangered;
     color: white;
@@ -6,17 +9,21 @@ body {
     font-family: rubik;
 }
 
+/*Container class Css style*/
 .container {
     padding: 40px;
     margin: 0 auto;
 }
 
+/*H1 Css style*/
 h1 {
     text-transform: uppercase;
     text-align: center;
     font-size: 54px;
 }
 
+/*Similar to flexbox, grids can also be used to separate content as well as wrap*/
+/*padding inline start ensures all content starts at most left removes all left padding*/
 #pokedex {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -24,6 +31,7 @@ h1 {
     padding-inline-start: 0;
 }
 
+/*list style removes all the attributes of a ordered or unordered list eg. 1,2,3*/
 .card {
     list-style: none;
     padding: 40px;
@@ -33,27 +41,33 @@ h1 {
   border-radius: 4px;
 }
 
+/*hovering over the card containing the pokemon triggers an animation*/
 .card:hover {
     animation: bounce 0.5s linear;
     cursor: pointer;
 }
 
+/*Card title class Css style*/
 .card-title {
     text-transform: capitalize;
     margin-bottom: 0px;
     font-size: 32px;
     font-weight: normal;
 }
+
+/*Card subtitle class Css style*/
 .card-subtitle {
     margin-top: 5px;
     color: #666;
     font-weight: lighter;
 }
 
+/*Card image class Css style*/
 .card-image {
     height: 180px;
 }
 
+/*bouncing animation when card is hovered*/
 @keyframes bounce {
     20% {
         transform: translateY(-6px);
@@ -70,6 +84,9 @@ h1 {
     }
 }
 
+/*popup class Css style*/
+/*display is flexed to ensure it will move along when screen resolution is lowered etc. 
+as well as other properties to make sure its centered and covers the screen for full effect*/
 .popup{
     position: fixed;
     top:0;
@@ -77,18 +94,20 @@ h1 {
     height: 100vh;
     width: 100vw;
     background: #f4f4f4;
-    opacity: 0.9;
+    opacity: 0.95;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/*closebtn id style*/
 #closebtn{
     position: absolute;
     top:20px;
     right: 20px;
 }
 
+/*button Css style*/
 button{
     background-color: #666;
     padding: 10px 20px;
@@ -98,13 +117,15 @@ button{
     transition: transform 100ms;
 }
 
+/*button hovered adds a cursor, moves and box shadow*/
 button:hover{
     cursor: pointer;
     transform: translateY(-1px);
     box-shadow: 0px 1px 2px crimson;
 }
+/*Searchbar class Css style*/
 
-  .searchbar{
+.searchbar{
     display: grid;
     height: 100%;
     place-items: center;
@@ -112,24 +133,38 @@ button:hover{
     padding-bottom: 30px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-  }
+}
 
+/*I actually came across this when finding a css property for my search bar
+what this does is whatever u selected with your mouse curose it changes it
+to that colour background although probably not noticable on pokemon cards
+when user selects text to delete on the searchbar it will display the same 
+colour smilar to the background and icons i have applied to*/
 ::selection{
     color: #fff;
     background: orangered;
-  }
-  .search-box{
+}
+
+/*search box class Css style*/
+/*Cubic beizer is a cool transition to use since it
+provides a fluid smooth animation for my search bar*/
+.search-box{
     position: relative;
     height: 60px;
     width: 60px;
     border-radius: 50%;
     box-shadow: 5px 5px 30px rgba(0,0,0,.2);
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  .search-box.active{
+}
+
+/*when searchbox is clicked it grows into 350px in width with the transition*/
+.search-box.active{
     width: 350px;
-  }
-  .search-box input{
+}
+
+/*input space for search box css style style
+opacity is set to 0 so it doesnt appear until clicked*/
+.search-box input{
     width: 100%;
     height: 100%;
     border: none;
@@ -140,14 +175,20 @@ button:hover{
     font-size: 18px;
     opacity: 0;
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  .search-box input.active{
+}
+
+/*once clicked, opacity is set back to 1 and reveals the white input space*/
+.search-box input.active{
     opacity: 1;
-  }
-  .search-box input::placeholder{
+}
+
+/*input box place holder style*/
+.search-box input::placeholder{
     color: #a6a6a6;
-  }
-  .search-box .search-icon{
+}
+
+/*search icon style for search box Css style*/
+.search-box .search-icon{
     position: absolute;
     right: 0px;
     top: 50%;
@@ -163,8 +204,10 @@ button:hover{
     cursor: pointer;
     z-index: 1;
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  .search-box .search-icon.active{
+}
+
+/*when clicked, changes colour, spins and moves to the right*/
+.search-box .search-icon.active{
     right: 5px;
     height: 50px;
     line-height: 50px;
@@ -173,8 +216,10 @@ button:hover{
     background: orangered;
     color: #fff;
     transform: translateY(-50%) rotate(360deg);
-  }
-  .search-box .cancel-icon{
+}
+
+/*cancel icon style for search box Css style*/
+.search-box .cancel-icon{
     position: absolute;
     right: 20px;
     top: 50%;
@@ -183,19 +228,11 @@ button:hover{
     color: orangered;
     cursor: pointer;
     transition: all 0.5s 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  .search-box .cancel-icon.active{
+}
+
+/*similar to search icon style and input style it remains hidden until triggered
+to appear by search icon, it also does the same animation with search icon*/
+.search-box .cancel-icon.active{
     right: -40px;
     transform: translateY(-50%) rotate(360deg);
-  }
-  .search-box .search-data{
-    text-align: center;
-    padding-top: 7px;
-    color: #fff;
-    font-size: 18px;
-    word-wrap: break-word;
-  }
-  .search-box .search-data.active{
-    display: none;
-  }
-  
+}
