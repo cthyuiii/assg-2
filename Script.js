@@ -100,9 +100,9 @@ const closepopup = () =>{
 fetchPokemon();
 
 //Search Bar JavaScript
-//this code essentially filters out data from the input gathered rather then having to be search immediately
+//this function essentially filters out data from the input gathered rather then having to be search immediately
 function myFunction() {
-    // Declared variables
+    //Declared variables
 	var input, filter, ul, li, a, i, txtValue;
 	//using myinput id
     input = document.getElementById('myInput');
@@ -112,7 +112,9 @@ function myFunction() {
 	//to get the card elements in the list
     li = ul.getElementsByClassName('card');
   
-    // Loops through all list items, and hides those who don't match the search query
+	//Loops through all list items, and hides those who don't match the search query
+	//since all card classes are anchored, it checks all of the anchor texts name which
+	//contain the pokemon names and basically filters our those that dont match the input value
     for (i = 0; i < li.length; i++) {
       a = li[i].getElementsByTagName("a")[0];
       txtValue = a.textContent || a.innerText;
