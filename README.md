@@ -75,6 +75,18 @@ Mobile test
     Link can be opened on mobile devices and across other networks
     web page is responsive and reacts to screen resolution
 
+W3C MarkUp Validation Passed. https://validator.w3.org/
+
+W3C CSS Validation failed but can be overlooked due to padding-inline-start possibly not existing in their database https://jigsaw.w3.org/css-validator/
+
+W3C Link Checking test failed but can be overlooked because it failed my external imported font awesome js script https://validator.w3.org/checklink
+
+Color constrast accessiblity validation test passed https://color.a11y.com/Contrast/
+
+spell checking failed due to PokeDex not being a word used in the english language but as a Pokemon entity https://typosaur.us/
+
+Alt text checking test passed https://rushax.com/tools/alt-tag-checker/
+
 ## Credits
 
 Credits for the PokeAPI team for the main api program.
