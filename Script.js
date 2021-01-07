@@ -21,35 +21,30 @@ function fetchPokemon() {
 }
 
 function caps(str) {
-	return str.charAt(0).toUpperCase() + str.slice(1);
-  }
+	return str.charAt(0).toUpperCase() + str.slice(1);}
 
 const displayPokemon = (pokemon) => {
 	console.log(pokemon);
 	
     const pokemonHTMLString = pokemon
         .map(
-            (pokeman) => `
+            (pokeman)=> `
         <li class="card" onclick="pokemoninfo(${pokeman.id})">
             <img class="card-image" src="${pokeman.image}"/>
             <a href="#" style="color: inherit;text-decoration: none;"><h2 class="card-title">${pokeman.id}. ${pokeman.name}</h2></a>
             <p class="card-subtitle">Type: ${caps(pokeman.type)}</p>
         </li>
-    `
+    	`
         )
         .join('');
     pokedex.innerHTML = pokemonHTMLString;
 };
 
 const pokemoninfo = async (id) =>{
-	
 	const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
 	const res = await fetch(url);
 	const pokeman = await res.json();
-
 	DisplayPopup(pokeman);
-	
-	
 };
 
 const DisplayPopup = (pokeman) =>{
@@ -66,7 +61,6 @@ const DisplayPopup = (pokeman) =>{
 				<small>Height(m): </small>${(pokeman.height)/10} |
 				<small>Weight(kg): </small>${(pokeman.weight)/10} |
 				<small>Type: </small>${caps(type)}</p>
-				
         	</div>
 		</div>
 		`;
@@ -100,24 +94,15 @@ function myFunction() {
     }
   }
 
-  const searchBox = document.querySelector(".search-box");
-      const searchBtn = document.querySelector(".search-icon");
-      const cancelBtn = document.querySelector(".cancel-icon");
-      const searchInput = document.querySelector("input");
-      const searchData = document.querySelector(".search-data");
-      searchBtn.onclick =()=>{
-        searchBox.classList.add("active");
+  	const searchBox = document.querySelector(".search-box");
+    const searchBtn = document.querySelector(".search-icon");
+    const cancelBtn = document.querySelector(".cancel-icon");
+    const searchInput = document.querySelector("input");
+    searchBtn.onclick =()=>{
+	searchBox.classList.add("active");
         searchBtn.classList.add("active");
         searchInput.classList.add("active");
         cancelBtn.classList.add("active");
-        searchInput.focus();
-        if(searchInput.value != ""){
-          var values = searchInput.value;
-          searchData.classList.remove("active");
-          searchData.innerHTML = "You just typed " + "<span style='font-weight: 500;'>" + values + "</span>";
-        }else{
-          searchData.textContent = "";
-        }
       }
       cancelBtn.onclick =()=>{
         searchBox.classList.remove("active");
