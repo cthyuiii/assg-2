@@ -96,6 +96,15 @@ Mobile test
     
     2.web page is responsive and reacts to screen resolution
     
+## API Error occurred
+
+During testing two sprites for two Pokemon (Glastier #896 and Spectier #897 is not loading
+
+It also appears that everyone else who is using the api has the same issue I checked the github page for pokeapi and the issue has already been brought out not too long ago 
+
+The issue should be fixed anytime soon depending on the dev team. https://github.com/PokeAPI/pokedex/issues/22
+
+    
 ## Final few commits
   
   1.Finalized Proper File structure
