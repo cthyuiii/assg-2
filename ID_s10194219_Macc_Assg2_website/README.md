@@ -48,39 +48,62 @@ Font Awesome script for icon set.
 Desktop Test
 
 1st Test after first commit
+
     1. Go to the Pokemon could be displayed until 898 page
+   
     2. Some Pokemons have no sprites loading due to code or api issues
+    
     3. Typing only showed one type for Pokemon with Duo typing
+    
     4. Display was working but could be improved better
     
 2nd Test after few commits
+
+    
     1. Pokemon all have images in sprites forms.
+    
     2. Fixed duo typing issue with join in json array
+    
     3. Popup that can be clicked to reveal more info
+    
     4. height and weight added
+    
     5.close button bug added to divs of card
 
 3rd test 
+
+    
     1. implemented abilities into popup
+    
     2. fixed close button 2 divs bug
+    
     3. styling and formatting for better visuals
 
 Final test
+
     1. implemented search bar
+    
     2. works properly and filters our info input as user types
+    
     3. had a bug before implementation was that its icons werent showing
 
 Published onto github:
 
 Mobile test
+
+    
     1.Link can be opened on mobile devices and across other networks
+    
     2.web page is responsive and reacts to screen resolution
     
 ## Final few commits
   
   1.Finalized Proper File structure
+  
   2.Added demo video and wireframing
+  
   3.Added documentation into code 
+  
   4. as well as finalizing README.md
 
 ## Validator testing
