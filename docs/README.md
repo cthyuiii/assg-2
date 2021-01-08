@@ -1,4 +1,5 @@
 # ID Assignment 2: PokeDex
+
 Link:https://cthyuiii.github.io/assg-2/
 
 PokeDex Web Application allows users to search for any of the 898 Pokemon that currently exists in the PokeAPI database.
@@ -26,54 +27,86 @@ Search Bar Feature at the top, allows users to search pokemon while it constantl
 
 All 898 Pokemon displayed in order.
 
-Pokemon 'Cards' contained to be clicked and display more infomation about the Pokemon.
+Pokemon 'Cards' to be clicked which contain and display more infomation about the Pokemon.
  
-
 ## Technologies Used
-
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 
 Html Code used to implement the classes to later display the data.
 
 CSS Code used to add style and colour to the elements.
 
-JS used to properly fetch my data from API as well as other functions such as search bar functions.
+JS used to properly fetch data from API as well as other functions such as search bar functions.
 
 Main API from :https://pokeapi.co/ 
 
 Google Fonts for fonts.
+
+Font Awesome script for icon set.
 
 ## Testing
 
 Desktop Test
 
 1st Test after first commit
+
     1. Go to the Pokemon could be displayed until 898 page
+   
     2. Some Pokemons have no sprites loading due to code or api issues
+    
     3. Typing only showed one type for Pokemon with Duo typing
+    
     4. Display was working but could be improved better
     
 2nd Test after few commits
+
+    
     1. Pokemon all have images in sprites forms.
+    
     2. Fixed duo typing issue with join in json array
+    
     3. Popup that can be clicked to reveal more info
+    
     4. height and weight added
+    
     5.close button bug added to divs of card
 
 3rd test 
+
+    
     1. implemented abilities into popup
+    
     2. fixed close button 2 divs bug
+    
     3. styling and formatting for better visuals
 
 Final test
+
     1. implemented search bar
+    
     2. works properly and filters our info input as user types
+    
     3. had a bug before implementation was that its icons werent showing
 
-Published onto github
+Published onto github:
+
 Mobile test
-    Link can be opened on mobile devices and across other networks
-    web page is responsive and reacts to screen resolution
+
+    
+    1.Link can be opened on mobile devices and across other networks
+    
+    2.web page is responsive and reacts to screen resolution
+    
+## Final few commits
+  
+  1.Finalized Proper File structure
+  
+  2.Added demo video and wireframing
+  
+  3.Added documentation into code 
+  
+  4. as well as finalizing README.md
+
+## Validator testing
 
 W3C MarkUp Validation Passed. https://validator.w3.org/
 
@@ -89,14 +122,21 @@ Alt text checking test passed https://rushax.com/tools/alt-tag-checker/
 
 ## Credits
 
-Credits for the PokeAPI team for the main api program.
+Credits for the PokeAPI team for the main api program. https://pokeapi.co/
 
-Google Fonts for font styling
+Google Fonts for font styling. 
 
-Font Awesome for the icons
+https://fonts.googleapis.com/css?family=Rubik&display=swap 
+
+https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap
+
+Font Awesome for the icons. https://kit.fontawesome.com/a076d05399.js  
 
 ### Media
+
 The sprite images you can see in the web page are all taken from PokeAPI where Pokemon sprite art from the games are compiled.
+
+Icons such as the Search magnify icon or cancel X button is all taken within Font Awesome's data script.
 
 ### Acknowledgements
 
