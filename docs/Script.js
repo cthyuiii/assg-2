@@ -2,7 +2,7 @@
 const pokedex = document.getElementById('pokedex');
 
 //Function to fetch pokemon data in the api
-//promise is a function which preloads all the fetched data at once rather one by one
+//promise is the response from fetch which preloads all the fetched data at once rather one by one
 //speeds up loading time
 //for loop to count all 898 pokemon available
 //fetched data is mapped into data variables later used to display
